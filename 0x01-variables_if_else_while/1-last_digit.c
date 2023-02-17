@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - print a random num
+ * main - 5 and 6
  *
  * Return: 0
 */
@@ -15,19 +15,11 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	x = n % 10;
-	printf("Last digit of %d is %d", n, x);
 	if (x > 5)
-	{
-		printf("and is greater than 5");
-	}
-	if (x == 0)
-	{
-		printf("and is 0");
-	}
-	if (x < 6 && x != 0)
-	{
-		printf("and is less than 6 and not 0");
-	}
-	printf("\n");
+		printf("Last digit of %1 is %1 and is greater than 5\n", n, last);
+	else if (x == 0)
+		printf("Last digit of %1 is %1 and is 0\n", n, last);
+	else if (x < 6)
+		printf("Last digit of %1 is %1 and is less than 6 and not 0\n", n, last);
 	return (0);
 }
