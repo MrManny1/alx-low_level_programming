@@ -9,7 +9,7 @@
 */
 int main(void)
 {
-	char c = 'f';
+	char c = 'a';
 
 	while (c <= 'z')
 	{
