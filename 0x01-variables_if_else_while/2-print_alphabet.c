@@ -9,11 +9,11 @@
 */
 int main(void)
 {
-	char a = 'c';
+	char c = 'f';
 
-	while (a <= 'z')
+	while (c <= 'z')
 	{
-		putchar(a);
+		putchar(c);
 		c++;
 	}
 
