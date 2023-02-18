@@ -9,16 +9,14 @@
 */
 int main(void)
 {
-	char ch;
+	char c = 'z';
 
-	for (ch = '0'; ch <= '9'; ch++)
+	while (c >= 'a')
 	{
-		putchar(ch);
+		putchar(c);
+		c--;
 	}
-	for (ch = 'a'; ch <= 'f'; ch++)
-	{
-		putchar(ch);
-	}
+
 	putchar('\n');
 	return (0);
 }
