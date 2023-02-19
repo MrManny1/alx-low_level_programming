@@ -21,7 +21,7 @@ int main(void)
 			x = 0;
 			while (x < 10)
 			{
-				if (x != y && z != z < y && y < x)
+				if (x != y && y != z && z < y && y < x)
 				{
 					putchar('0' + z);
 					putchar('0' + y);
