@@ -27,7 +27,7 @@ int main(void)
 					putchar('0' + y);
 					putchar('0' + x);
 
-					if (c + d + e != 9 + 8 + 7)
+					if (x + y + z != 9 + 8 + 7)
 					{
 						putchar(',');
 						putchar(' ');
