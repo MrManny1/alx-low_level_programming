@@ -11,11 +11,10 @@ int main(void)
 		printf("This is a 64-bit machine.\n");
 	else
 		printf("This is a 32-bit machine.\n";
-	endif
 
 	printf("Size of char: %ld byte(s)\n", sizeof(char));
 	printf("Size of short: %ld byte(s)\n", sizeof(short));
 	printf("Size of long: %ld byte(s)\n", sizeof(long));
 	printf("Size of int: %ld byte(s)\n', size of(int));
-	return 0:}
+	return (0);
 }
