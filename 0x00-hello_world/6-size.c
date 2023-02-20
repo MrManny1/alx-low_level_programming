@@ -3,18 +3,20 @@
 /**
  * main - A C program the size of various types on the computer
  *
- * Return: 0 (success)
+ * Return: 0 (Success)
 */
 int main(void)
 {
-	if __WORDSIZE == 64
-		printf("This is a 64-bit machine.\n");
-	else
-		printf("This is a 32-bit machine.\n";
+	char a;
+	int b;
+	long int c;
+	long long int d;
+	float f;
 
-	printf("Size of char: %ld byte(s)\n", sizeof(char));
-	printf("Size of short: %ld byte(s)\n", sizeof(short));
-	printf("Size of long: %ld byte(s)\n", sizeof(long));
-	printf("Size of int: %ld byte(s)\n', size of(int));
+	printf("Size of char: %lu byte(s)\n", (unsigned long)sizeof(a));
+	printf("Size of int: %lu byte(s)\n", (unsigned long)sizeof(b));
+	printf("Size of long int: %lu byte(s)\n", (unsigned long)sizeof(c));
+	printf("Size of long long: %lu byte(s)\n", (unsigned long)sizeof(d));
+	printf("Size of float: %lu byte(s)\n", (unsigned long)sizeof(f));
 	return (0);
 }
