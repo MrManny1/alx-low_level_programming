@@ -21,7 +21,7 @@ int main(void)
 
 		if (c < 49)
 		{
-			print(", ");
+			printf(", ");
 		}
 		c++;
 	}
