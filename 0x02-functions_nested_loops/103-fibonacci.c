@@ -11,7 +11,7 @@ int main(void)
 {
 	int c = 0, d = 1, next = 0;
 	int sum = 0;
-	
+
 	while (next < 4000000)
 	{
 		next = c + d;
@@ -19,6 +19,7 @@ int main(void)
 		d = next;
 		if (next % 2 == 0)
 			sum += next;
-	}printf("%i\n", sum);
+	}
+	printf("%i\n", sum);
 	return (0);
 }
