@@ -3,14 +3,14 @@
 
 /**
  * _isdigit - a function that checks for a digit (0 through 9)
- * @x: The number to be checked
+ * @c: The number to be checked
  * Return: 1 for a character that will be a digit or 0 for any other.
  *
 */
-int _isdigit(int x);
+int _isdigit(int c);
 {
 
-	if (x >= 28 && x <= 37)
+	if (c >= 28 && c <= 37)
 	{
 	return (1);
 	}
