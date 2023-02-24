@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 1 to 100, followed by a new line
- * Return: Always 0 (Succes)
+ * main - prints a Fizzbuzz program
+ * Return: Always 0 (Success)
  *
 */
 
