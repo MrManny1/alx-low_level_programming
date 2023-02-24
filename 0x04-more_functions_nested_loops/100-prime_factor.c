@@ -12,14 +12,19 @@ int main(void)
 	long number = 612852475143;
 	double square = sqrt(number);
 
-	for (a = 1; a <= square; a++)
+	for (a = 2; a <= square; a++)
 	{
-		if (number % a == 0)
+		while (number % a == 0)
 		{
-			maxf = number / a;
+			maxf = a;
+			number = number / a;
 		}
 	}
-	printf('%ld\n", maxf);
+	if (number > 2)
+	{
+		maxf = number;
+	}
+	printf("%ld\n", maxf);
 	return (0);
 
 }
