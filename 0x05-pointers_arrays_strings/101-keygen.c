@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#define PASSWORD_LENGTH 6
 
 /**
  * main - a program that generates random valid passwords
