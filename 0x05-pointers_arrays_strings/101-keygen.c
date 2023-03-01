@@ -11,30 +11,56 @@
 
 int main(void)
 {
-	char password[6];
-	const char charset[] =
-		"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-		const int charset_size = sizeof(charset) - 1;
-		int i;
+	char password[84];
+	int i = 0, sum = 0, diff_half1, diff_half2;
 
-		srand(time(NULL));
+	srand(time(0));
 
-		for (;;)
+	while (sum < 2772)
+
+	{
+		password[i] = 33 + rand() % 94;
+		sum += password[i++];
+	}
+
+	password[i] = '\0';
+
+	if (sum != 2772)
+
+	{
+		diff_half1 = (sum - 2772) / 2;
+		diff_half2 = (sum - 2772) / 2;
+
+		if ((sum - 2772) % 2 != 0)
+			diff_half1++;
+
+		for (i = 0; password[i]; i++)
+
 		{
-			for (i = 0; i < 6; i++)
-			{
-				password[i] = charset[rand() % charset_size];
-			}
-			password[6] = '\0';
+			if (password[i] >= (33 + diff_half1))
 
-			printf("Trying password: %s\n", password);
-
-			if (system("./101-crackme password") == 0)
 			{
-				printf("Password cracked: %s\n", password);
+				password[i] -= diff_half1;
+				if (password[i] < 33)
+					password[i] = 126 - (32 - password[i]);
+
 				break;
 			}
 		}
-		return (0);
-}
 
+		for (i = 0; password[i]; i++)
+
+		{
+			if (password[i] >= (33 + diff_half2))
+
+			{
+				password[i] -= diff_half2;
+				if (password[i] < 33)
+					password[i] = 126 - (32 - password[i]);
+				break;
+			}
+		}
+	}
+	printf("%s", password);
+	return (0);
+}
