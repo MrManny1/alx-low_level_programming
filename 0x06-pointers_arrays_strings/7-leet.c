@@ -14,8 +14,10 @@ char *leet(char *n)
 	char s2[] = "4433007711";
 
 	for (a = o; n[a] != '\0'; a++)
+
 	{
 		for (b = 0; b < 10; b++)
+
 		{
 			if (n[a] == s1[b])
 			{
