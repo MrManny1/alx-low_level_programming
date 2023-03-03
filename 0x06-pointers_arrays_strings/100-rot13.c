@@ -3,14 +3,15 @@
 
 /**
  * rot13 - a function that encodes a string using rot13
- * @s: pointer
- * Return: *s
+ * @s: pointer string
+ * Return: s
  *
  */
 
 char *rot13(char *s)
 {
-	int i, j;
+	int i;
+	int j;
 
 	char data1[] = “ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz”;
 
@@ -19,7 +20,7 @@ char *rot13(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
-		{i
+		{
 			if (s[i] == data1[j])
 			{
 				s[i] = datarot[j];
