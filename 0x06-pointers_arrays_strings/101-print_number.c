@@ -23,5 +23,3 @@ void print_number(int n)
 	}
 	_putchar((p1 % 10) + '0');
 }
-
-
