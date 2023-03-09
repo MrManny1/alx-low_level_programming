@@ -8,7 +8,7 @@ int is_prime_number(int n);
  * is_divisible - checks if a number is divisible
  * @num: the number to be checked
  * @div: the divisor
- * Return: if the number is divisible - 0
+ * Return: if the number ius divisible - 0
  *         if the number is not divisible - 1
  *
  */
@@ -41,7 +41,7 @@ int is_prime_helper(int n, int i)
 	if (is_divisible(n, i) == 0)
 		return (0);
 
-	return is_prime_helper(n, i + 1);
+	return (is_prime_helper(n, i + 1));
 }
 
 
@@ -54,5 +54,8 @@ int is_prime_helper(int n, int i)
 
 int is_prime_number(int n)
 {
-	return is_prime_helper(n, 2);
+	if (is_prime_helper(n, 2) == 1)
+		return (1);
+	else
+		return (0);
 }
