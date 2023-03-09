@@ -4,6 +4,7 @@ int is_divisible(int num, int div);
 int is_prime_helper(int n, int i);
 int is_prime_number(int n);
 
+
 /**
  * is_divisible - checks if a number is divisible
  * @num: the number to be checked
@@ -58,4 +59,6 @@ int is_prime_number(int n)
 		return (1);
 	else
 		return (0);
+
+	return is_prime_helper(n, 2);
 }
